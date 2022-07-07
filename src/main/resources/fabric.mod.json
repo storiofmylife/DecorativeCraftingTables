@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "dct",
+  "version": "${version}",
+
+  "name": "Decorative Crafting Tables",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "storiofmylife"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.storiofmylife.dct.DecorativeCraftingTables"
+    ],
+    "client": [
+      "net.storiofmylife.dct.DecorativeCraftingTablesClient"
+    ]
+  },
+  "mixins": [
+    "dct.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
